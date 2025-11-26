@@ -1,0 +1,14 @@
+agents:
+  researcher:
+    model: "claude-3-opus-20240229"
+    role: "Deep Research & Analysis"
+  coder:
+    model: "claude-3-sonnet-20240229"
+    role: "Code Generation & Refactoring"
+  manager:
+    model: "claude-3-haiku-20240307"
+    role: "Task Orchestration & Planning"
+
+paths:
+  workspace: "./workspace"
+  logs: "./logs"

@@ -1,29 +1,34 @@
-# 🤖 AI Orchestrator
+# AI Orchestrator
 
-This tool is a standalone AI orchestration system designed to coordinate multiple AI agents (Claude, Codex, etc.) for high-performance software development.
+A highly advanced agentic system designed to orchestrate development tasks using Claude Code and other AI tools.
 
-## 🚀 Features
+## Features
 
-- **Multi-Agent Coordination:** Manages specialized agents for research, coding, and quality assurance.
-- **Claude Integration:** Leverages Anthropic's Claude for deep research and semantic understanding.
-- **Codex Simulation:** Simulates a coding agent (Codex) for code generation and syntax checking.
-- **Parallel Execution:** Capable of running tasks concurrently (planned feature).
+- **Multi-Agent Architecture**: Specialized agents for research, coding, and management.
+- **Configuration Driven**: Easily configurable via `config.yaml`.
+- **Extensible**: Designed to integrate with various AI models and tools.
+- **Task Orchestration**: Manages complex workflows and dependencies.
 
-## 🛠️ Setup
+## Setup
 
-1.  Ensure Python 3.8+ is installed.
-2.  Install dependencies (if any).
+1.  Install dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+2.  Configure agents in `config.yaml`.
+
 3.  Run the orchestrator:
     ```bash
     python main.py
     ```
 
-## 🏗️ Architecture
+## Architecture
 
-- **AgentManager:** Central controller that dispatches tasks.
-- **ResearcherAgent (Claude):** Handles information retrieval and complex reasoning.
-- **CoderAgent (Codex):** Handles code generation and local validation.
+The system consists of an `AgentManager` that coordinates multiple `Agent` instances. Each agent has a specific role and utilizes different AI models (e.g., Claude 3 Opus, Sonnet, Haiku) best suited for their tasks.
 
-## 📝 Usage
+## Future Roadmap
 
-Currently, the system runs a predefined workflow in `main.py`. Future versions will support dynamic task ingestion.
+- Integration with ChromaDB for long-term memory.
+- Real-time feedback loops with the Claude CLI.
+- Web interface for monitoring and control.
